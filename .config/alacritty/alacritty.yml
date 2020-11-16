@@ -416,8 +416,10 @@ key_bindings:
   - { key: V,      mods: Control,       action: Paste    } # terminal up
   - { key: J,      mods: Control,       chars: "\x02\x6A"} # terminal up
   - { key: K,      mods: Control,       chars: "\x02\x6F"} # terminal down
-  - { key: H,      mods: Alt,           chars: "\x02\x48"} # left resize
-  - { key: L,      mods: Alt,           chars: "\x02\x4C"} # right resize
+  - { key: H,      mods: Alt,           chars: "\x02\x48"} # resize left
+  - { key: J,      mods: Alt,           chars: "\x02\x4A"} # resize down
+  - { key: K,      mods: Alt,           chars: "\x02\x4B"} # resize up
+  - { key: L,      mods: Alt,           chars: "\x02\x4C"} # resize right
   - { key: M,      mods: Control,       chars: "\x02\x7A"} # maximize terminal
   - { key: X,      mods: Alt,           chars: "\x02\x6B"} # kill terminal
   - { key: R,      mods: Alt,           chars: "\x02\x72"} # reload divisions
