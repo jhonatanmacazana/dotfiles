@@ -427,6 +427,8 @@ key_bindings:
   - { key: Return, mods: Control|Shift, chars: "\x02\x76"} # create new primary terminal
   - { key: Return, mods: Control,       chars: "\x02\x78"} # set terminal to primary
   - { key: Space,  mods: Control,       chars: "\x02\x63"} # mode: copy paste
+  - { key: B,      mods: Alt,           chars: "\x02\x62"} # pane background to black
+  - { key: B,      mods: Alt|Shift,     chars: "\x02\x42"} # pane background to default
   #- { key: Space,  mods: Control|Shift, chars: "\x02\x20"} # create new primary terminal
 
 
