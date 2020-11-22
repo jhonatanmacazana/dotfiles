@@ -43,5 +43,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-export PATH="$PATH:/opt/terraform"
-export TF_VAR_digitalocean_token=9d3b93b26a8ba25173add7ac7c9a0e36921a2e8700caadf4528d09ef3be80a83
