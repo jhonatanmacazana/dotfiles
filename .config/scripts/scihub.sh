@@ -6,7 +6,11 @@
 # to pass a list of DOI strings as arguments to this script you could use: "cat DOIS.txt | xargs ./sciHub.sh"
 # replace .se in the sci-hub url with whatever tld is currently in operation....
 
+_OUTPUT_DIR="/mnt/d/Documents/papers"
+[ ! -d $_OUTPUT_DIR ] && mkdir -p $_OUTPUT_DIR
+
 for DOI in "$@"; do
-    wget https://sci-hub.se/$DOI -qO - | grep -Eom1 'https://[^ ]+\.pdf' | wget -i -
+    _URL=https:`wget https://sci-hub.se/$DOI -qO - | grep -Eom1 '//[^ ]+\.pdf' ` 
+    wget $_URL -P $_OUTPUT_DIR
 done
-unset DOI
+unset DOI _URL _OUTPUT_DIR
