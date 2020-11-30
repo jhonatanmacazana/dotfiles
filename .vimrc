@@ -2,14 +2,27 @@ if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
 
+" --------------------------- Globals ------------------------------
 set nocompatible	" Use Vim defaults (much better!)
-set bs=indent,eol,start		" allow backspacing over everything in insert mode
-"set ai			" always set autoindenting on
+set autoindent		" Indent if needed
+set expandtab		" Replace tab with spaces
+set bs=indent,eol,start	" allow backspacing over everything in insert mode
 "set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 			" than 50 lines of registers
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
+
+set nu rnu              " Turn hybrid line numbers on
+set laststatus=2        " Show the file name constantly
+
+
+" --------------------------- Tabs  ------------------------------
+set number
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set clipboard=unnamedplus
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
