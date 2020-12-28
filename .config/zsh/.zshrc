@@ -5,7 +5,8 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 #export TERMINAL="alacritty"
 
-ZSH_THEME="avit"
+#ZSH_THEME="avit"
+ZSH_THEME=""
 
 plugins=(git z)
 #plugins=(git z docker docker-compose)
@@ -28,3 +29,7 @@ for file in ~/.config/shell/{exports,aliases,functions,extra,private}.sh; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
+
+fpath+=$HOME/.config/zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
