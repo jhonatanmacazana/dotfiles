@@ -1221,4 +1221,4 @@ schemes:
       cyan:    '0x00ffff'
       white:   '0xffffff'
 
-colors: *material_theme
+colors: *ayu_dark
