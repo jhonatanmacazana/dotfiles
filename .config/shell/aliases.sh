@@ -172,3 +172,6 @@ alias zrc='vim ~/.config/zsh/.zshrc'
 alias trc='vim ~/.tmux.conf'
 
 alias dotfiles="git --git-dir=$HOME/github/dotfiles/ --work-tree=$HOME"
+alias dotfiles="git --git-dir=$HOME/github/dotfiles/ --work-tree=$HOME"
+alias alacritty_save="rsync -avh --delete /mnt/c/Users/user/AppData/Roaming/alacritty/ $HOME/.config/alacritty/"
+alias alacritty_load="rsync -avh --delete $HOME/.config/alacritty/ /mnt/c/Users/user/AppData/Roaming/alacritty/"
