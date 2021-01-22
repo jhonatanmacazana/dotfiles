@@ -8,7 +8,7 @@ export EDITOR="$VISUAL"
 #ZSH_THEME="avit"
 ZSH_THEME=""
 
-plugins=(git z)
+#plugins=(git z)
 #plugins=(git z docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh

@@ -1,5 +1,5 @@
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
-   set fileencodings=ucs-bom,utf-8,latin1
+  set fileencodings=ucs-bom,utf-8,latin1
 endif
 
 " --------------------------- Globals ------------------------------
@@ -19,9 +19,9 @@ set laststatus=2        " Show the file name constantly
 
 " --------------------------- Tabs  ------------------------------
 set number
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set clipboard=unnamedplus
 
 " Only do this part when compiled with support for autocommands
@@ -75,3 +75,38 @@ endif
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
+
+
+"-------------------------------------------------------------------------------
+
+" Windows
+
+"-------------------------------------------------------------------------------
+" Split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+" Move window
+nmap <Space> <C-w>w
+map s<left> <C-w>h
+map s<up> <C-w>k
+map s<down> <C-w>j
+map s<right> <C-w>l
+map sh <C-w>h
+map sk <C-w>k
+map sj <C-w>j
+map sl <C-w>l
+" Resize window
+nmap <C-w><left> <C-w><
+nmap <C-w><right> <C-w>>
+nmap <C-w><up> <C-w>+
+nmap <C-w><down> <C-w>-
+
+"-------------------------------------------------------------------------------
+
+" Tabs
+
+"-------------------------------------------------------------------------------
+" Open current directory
+nmap te :tabedit 
+nmap <S-Tab> :tabprev<Return>
+nmap <Tab> :tabnext<Return>
