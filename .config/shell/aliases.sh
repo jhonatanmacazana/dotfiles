@@ -177,3 +177,16 @@ alias alacritty_save="rsync -avh --delete /mnt/c/Users/user/AppData/Roaming/alac
 alias alacritty_load="rsync -avh --delete $HOME/.config/alacritty/ /mnt/c/Users/user/AppData/Roaming/alacritty/"
 alias win_user="cmd.exe /c echo %username% 2>/dev/null"
 alias win_path="cmd.exe /c \"<nul set /p=%UserProfile%\" 2>/dev/null"
+
+# --------------------------------
+# Git flow
+# --------------------------------
+alias gffs="git flow feature start"
+alias gffp="git flow feature publish"
+alias gfff="git flow feature finish"
+
+alias gfbs="git flow bugfix start"
+alias gfbf="git flow bugfix finish"
+
+alias gfrs="git flow release start"
+alias gfrf="git flow release finish"

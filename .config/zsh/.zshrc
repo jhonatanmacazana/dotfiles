@@ -11,6 +11,8 @@ ZSH_THEME=""
 #plugins=(git z)
 #plugins=(git z docker docker-compose)
 
+plugins=(wakatime)
+
 source $ZSH/oh-my-zsh.sh
 source /etc/zsh_command_not_found
 
