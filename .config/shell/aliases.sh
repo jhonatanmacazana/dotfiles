@@ -170,6 +170,7 @@ alias mpr2='mpirun -np 2'
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.config/zsh/.zshrc'
 alias trc='vim ~/.tmux.conf'
+alias sshrc='vim ~/.ssh/config'
 
 alias dotfiles="git --git-dir=$HOME/github/dotfiles/ --work-tree=$HOME"
 alias dotfiles="git --git-dir=$HOME/github/dotfiles/ --work-tree=$HOME"

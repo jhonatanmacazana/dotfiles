@@ -8,10 +8,8 @@ export EDITOR="$VISUAL"
 #ZSH_THEME="avit"
 ZSH_THEME=""
 
-#plugins=(git z)
 #plugins=(git z docker docker-compose)
-
-plugins=(wakatime)
+plugins=(docker wakatime pdm aws terraform git)
 
 source $ZSH/oh-my-zsh.sh
 source /etc/zsh_command_not_found
