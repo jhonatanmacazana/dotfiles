@@ -25,7 +25,7 @@ fi
 
 export ARCHFLAGS="-arch x86_64"
 
-for file in ~/.config/shell/{exports,aliases,functions,extra,lscolors,private}.sh; do
+for file in ~/.config/shell/{init,exports,aliases,functions,extra,lscolors,private}.sh; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
