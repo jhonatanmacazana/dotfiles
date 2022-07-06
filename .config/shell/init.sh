@@ -18,3 +18,6 @@ if [[ -z "$XDG_RUNTIME_DIR" ]]; then
   fi
 fi
 
+# Oh My Zsh directory 
+ZSH="$XDG_CONFIG_HOME/oh-my-zsh"
+
